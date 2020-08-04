@@ -11,12 +11,12 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { //eslint-disable-line
   var theSum = a + b;
   var theString = `The sum of ${a} and ${b} is ${theSum}.`;
- // console.log(theSum, theString);
+  // console.log(theSum, theString);
   return [theSum, theString];
 }
 
 // Here is the test for sum(); uncomment it to run it
-//testSum(4, 7);
+testSum(4, 7); //eslint-disable-line
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -32,12 +32,12 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a, b) { //eslint-disable-line
   var multiplyTwo = a * b;
   var multiplyString = `The product of ${a} and ${b} is ${multiplyTwo}.`;
- // console.log(multiplyTwo, multiplyString);
+  // console.log(multiplyTwo, multiplyString);
   return [multiplyTwo, multiplyString];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-//testMultiply(5,9);
+testMultiply(5,9); //eslint-disable-line
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -58,15 +58,15 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   var sumThree = sum(sumTwo, c)[0];
   var product = multiply(a, b)[0];
   var productThree = multiply(product, c)[0];
-  var thirdElementString = `${a} and ${b} and ${c} sum to ${sumThree}.`
+  var thirdElementString = `${a} and ${b} and ${c} sum to ${sumThree}.`;
   var fourthElementString = `The product of ${a} and ${b} and ${c} is ${productThree}.`;
-  console.log (thirdElementString)
-  console.log (fourthElementString)
-  return [sumThree, productThree, thirdElementString, fourthElementString]
+  console.log(thirdElementString);
+  console.log(fourthElementString);
+  return [sumThree, productThree, thirdElementString, fourthElementString];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-//testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5); //eslint-disable-line
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -86,14 +86,14 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
   var sumOne = sum(sumArr[0], sumArr[1])[0];
   var sumTwo = sum(sumArr[2], sumOne)[0];
-  var sumString = `${testArray} was passed in as an array of numbers, and ${sumTwo} is their sum.`
+  var sumString = `${testArray} was passed in as an array of numbers, and ${sumTwo} is their sum.`;
   console.log(sumString);
   return [sumTwo, sumString];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-//testSumArray(testArray);
+testSumArray(testArray); //eslint-disable-line
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -108,21 +108,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-var testArray = [2,3,4]
+var testArray = [2, 3, 4]; //eslint-disable-line
 
 function multiplyArray(multArr) { //eslint-disable-line
   var multiplyOne = multiply(multArr[0], multArr[1])[0];
   var multiplyTwo = multiply(multArr[2], multiplyOne)[0];
-  var sumString = `The numbers ${testArray} have a product of ${multiplyTwo}.`
+  var sumString = `The numbers ${testArray} have a product of ${multiplyTwo}.`;
   console.log(sumString);
   return [multiplyTwo, sumString];
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
- testMultiplyArray(testArray);
+testMultiplyArray(testArray); //eslint-disable-line
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
@@ -141,7 +141,7 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
+var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
